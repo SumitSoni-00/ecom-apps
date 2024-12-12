@@ -1,0 +1,12 @@
+1) hibernate naming strategy
+2) BigDecimal
+3) Builder
+4) ResponseStatus
+5) constructor injection
+6) @Slf4J
+7) use generics for
+8) method reference ->         return productRepository.findAll().stream().map(this::mapToProductResponse).collect(Collectors.toList());
+9) Test container -
+Testcontainers is an open source library for providing throwaway, lightweight instances of databases, message brokers, web browsers, or just about anything that can run in a Docker container.
+https://testcontainers.com/modules/?category=relational-database
+10) inntegration tests
