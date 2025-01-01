@@ -10,3 +10,41 @@
 Testcontainers is an open source library for providing throwaway, lightweight instances of databases, message brokers, web browsers, or just about anything that can run in a Docker container.
 https://testcontainers.com/modules/?category=relational-database
 10) inntegration tests
+11) multimodule project pom -- do packkaging pom and add modules and hcnage parent and remove relative path
+
+12)     private final OrderRepository orderRepository;
+construtcor autowiring
+13) Transactioal annotation
+
+14) create drop
+
+15) 2
+
+    If you create a new service and have a choice between RestTemplate and WebClient - I'd go with WebClient.
+
+    According to the RestTemplate doc:
+
+    As of 5.0 this class is in maintenance mode, with only minor requests for changes and bugs to be accepted going forward. Please, consider using the org.springframework.web.reactive.client.WebClient which has a more modern API and supports sync, async, and streaming scenarios.
+
+    Spring Boot Starter 3.1.3 that you mentioned uses Spring Framework 6.0.6 under the hood, so that doc applies to your case too.
+16)   <plugins>
+                <plugin>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-maven-plugin</artifactId>
+                    <configuration>
+                        <skip>true</skip>
+                    </configuration>
+                </plugin>
+            </plugins>
+
+            l org.springframework.boot:spring-boot-maven-plugin:3.4.0:repackage failed: Unable to find main class
+
+            https://www.google.com/search?q=how+to+create+spring+boot+jar+without+mai+class&oq=how+to+create+spring+boot+jar+without+mai+class&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIICAEQABgWGB4yDQgCEAAYhgMYgAQYigUyBwgDEAAY7wUyCggEEAAYogQYiQUyCggFEAAYogQYiQXSAQkxMzIwNmowajeoAgewAgE&sourceid=chrome&ie=UTF-8
+
+            https://stackoverflow.com/questions/7821152/disable-a-maven-plugin-defined-in-a-parent-pom
+
+            https://www.google.com/search?q=how+to+stop+importing+plugin+from+parent+pom&oq=how+to+stop+importing+plugin+from+parent+pom&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQIRigATIHCAIQIRigATIHCAMQIRigATIHCAQQIRifBTIHCAUQIRifBTIHCAYQIRifBTIHCAcQIRifBTIHCAgQIRifBTIHCAkQIRifBdIBCTE0NzQ4ajBqN6gCCLACAQ&sourceid=chrome&ie=UTF-8
+
+
+ 17) RestTemplate maintainence mode
+ 18) webclcient
